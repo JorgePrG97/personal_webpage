@@ -1,0 +1,179 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Jorge Prieto</title>
+<style>
+@font-face {
+	font-family: 'fira'
+	src: url(fuentes/FiraSansOT-Light.otf);
+}
+#cabecera {
+	background: url(imagenes/nubes.png)left top repeat-x;
+	height: 20%;
+	clear: both; /*http://librosweb.es/referencia/css/clear.html */
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	text-align: center;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-size: large;
+}
+#abajo {
+	background: url(imagenes/suelo.png) left bottom repeat-x;
+	background-color: rbga (0,0,0,0);
+	color: blue;
+	height: 5%;
+	clear: both;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	text-align: center;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-size: large;
+}
+footer {
+	height: 10%;
+	width: 100%;
+	text-align: center;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-size: large;
+}
+body, html {
+	font-family: fira, Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-size: 1em;
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+#main {
+   height: 80%;
+   position: relative;
+   top: 10%;
+   bottom:10%;
+   background-color: black;
+}
+#izq { /*me veo obligado a que esta sea la parte central, sino se descolocan*/
+	height: 100%;
+	width: 50%;
+	float:left;
+	/*background: url("imagenes/fondo.jpg");*/
+	background-color: white;
+	box-shadow: inset 0 0 5px 5px #888;
+}
+#central { /*Por ende esta es la parte izquierda*/
+	height: 100%;
+	width: 25%;
+	float: left;
+	background-color: blue;
+	color: white;
+}
+#dcha {
+	background: -webkit-linear-gradient(top, rgba(164,179,87,1) 39%, rgba(131,149,34,1) 80%, rgba(117,137,12,1) 97%, rgba(117,137,12,1) 100%);
+	float:right;
+	width: 25%;
+	height: 100%;
+	border-radius: 10%;
+}
+a:link {   
+ 	text-decoration:none;
+}
+a:visited {
+	color: black;
+}
+.titulo {
+	text-align: center;
+	display: block;
+	background: rgba(0,0,0,0);
+	height: 5%;
+	float: left;
+	width: 100%;
+}
+h2 {
+	margin: 0;
+	padding: 0;
+}
+.cajaLateralInferior {
+	background: white;
+	bottom: 0px;
+	position: absolute;
+	width: 25%;
+	box-shadow: inset 0 0 5px 5px #888;
+}
+ol {
+	list-style: none;
+}
+.rrss {
+	float: left;
+	margin-left: 3%;
+}
+table {
+	padding: 0px;
+	margin: 0px;
+	border-spacing: 0px;
+	font-family: fira, Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: white;
+	text-align: center;
+	font-size: 2em;
+}
+#video_central {
+	position:relative;
+	left: 35%;
+	top: 25%;
+}
+</style>
+</head>
+<body>
+	<div id="cabecera">
+		<h1><a href="pag.html">Pagina personal de Jorge Prieto</a></h1>
+	</div>
+<div id="main">
+  <div id="central">
+  <div class="titulo"><h2>MENÚ</h2></div>
+	<table width="100%" height="95%" border="1">
+  <tbody>
+    <tr>
+      <td>Prueba 1</td>
+    </tr>
+    <tr>
+      <td>Prueba 2</td>
+    </tr>
+    <tr>
+      <td>Prueba 3</td>
+    </tr>
+    <tr>
+      <td>Prueba 4</td>
+    </tr>
+  </tbody>
+</table>
+  </div>
+  <div id="izq">
+  <div class="titulo"><h2>CONTENIDO PRINCIPAL</h2></div>
+  <div id="video_central">
+  <video width="320" height="240" controls preload autoplay>
+      <source src="videos/MOOC.m4v" type=video/mov>
+      <source src="videos/MOOC.webm" type=video/webm>
+    </video>
+    </div>
+  </div>
+  <div id="dcha">
+  <div class="titulo"><h2>LINKS &amp; PROYECTOS</h2></div>
+  	<div class="cajaLateralInferior">
+  		<div class="titulo"><h3>Redes Sociales &amp; Contacto</h3></div>
+        	<div class="rrss"><a href="https://twitter.com/jorgeprg97"><img src="imagenes/twitter.png" width="100" height="75" alt="TWITTER"/></a></div>
+            <div class="rrss"><a href="https://www.instagram.com/jorgepr97"><img src="imagenes/insta.png" width="100" height="75" alt="INSTAGRAM"/></a></div>
+            <div class="rrss"><a href="mailto:jorgeprg97@gmail.com"><img src="imagenes/tobaco.svg" width="100" height="75" alt="CORREO"/></a></div>
+            <div class="rrss"><a href="#"><img src="imagenes/github.svg" width="100" height="75" alt="GITHUB"/></a></div>
+  	</div>
+  </div>
+</div>
+    <div id="abajo">Página realizada por Jorge Prieto Gómez. Ultima vez actualizada 05-10-2016</div>
+    <footer><pre>Página realizada por Jorge Prieto Gómez. Ultima vez actualizada 05-10-2016</pre></footer>
+    
+</body>
+</html>
